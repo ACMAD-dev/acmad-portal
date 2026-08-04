@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <h2>Explore</h2>
-          <Link href="/#about">About ACMAD</Link>
+          <Link href="/about">About ACMAD</Link>
           <Link href="/#services">Climate services</Link>
           <Link href="/#products">Products</Link>
           <Link href="/#updates">News & events</Link>

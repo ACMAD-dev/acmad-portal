@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from 'react';
-import { ChevronDown, Menu, Search, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const navigation = [
-  { label: 'About', href: '/#about' },
+  { label: 'About', href: '/about' },
   { label: 'Forecasts', href: '/#products' },
   { label: 'Climate Services', href: '/#services' },
   { label: 'Early Warnings', href: '/#alerts' },
