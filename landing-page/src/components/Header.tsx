@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, Search, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const navigation = [
-  { label: 'About', href: '/about' },
+  { label: 'About', href: '/#about' },
   { label: 'Forecasts', href: '/#products' },
   { label: 'Climate Services', href: '/#services' },
   { label: 'Early Warnings', href: '/#alerts' },
@@ -38,10 +38,10 @@ export default function Header() {
           <div className="nav-links desktop-only">
             {navigation.map((item) => <Link key={item.label} href={item.href}>{item.label}</Link>)}
           </div>
-          {/* <div className="nav-actions desktop-only">
+          <div className="nav-actions desktop-only">
             <button className="search-button" aria-label="Search"><Search size={19} /></button>
             <a href="http://localhost:5173" className="portal-link">Staff portal <ChevronDown size={14} /></a>
-          </div> */}
+          </div>
           <button
             className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen((open) => !open)}
